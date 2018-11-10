@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/tv_order_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:minHeight="35dp"
+            android:text="裝修titletitletite"
+            android:textColor="@color/font_color_666"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_order_datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:minHeight="35dp"
+            android:text="今天 18:00"
+            android:textSize="11dp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_product_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="商品买那个  X1\n商品买那个  X1"
+                android:textColor="@color/font_color_666"
+                android:textSize="14dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_total_price"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="佣金: ¥ 166.00"
+                android:textColor="@color/font_color_333"
+                android:textSize="14dp"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_order_status"
+            android:layout_width="50dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:background="@color/font_color_red"
+            android:gravity="center"
+            android:text="待完成"
+            android:textColor="@color/color_white"
+            android:textSize="11dp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+</LinearLayout>

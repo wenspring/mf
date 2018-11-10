@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    tools:context="meifeng.mobile.kevin.com.meifeng.mvp.main.shop.ShopActivity">
+
+    <meifeng.mobile.kevin.com.meifeng.ext.toolbar.ToolBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:function_enable="false"
+        app:title_name="店铺主页" />
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="46dp"
+        android:background="@color/color_white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/iv_shop_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/img_stop_show" />
+
+        <TextView
+            android:id="@+id/tv_shop_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/font_color_333"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_center"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/ll_top"
+        android:background="@color/color_white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_btn_introduce"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="简介"
+                android:textColor="@color/font_color_333" />
+
+            <View
+                android:id="@+id/line_introduce"
+                android:layout_width="13dp"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/font_color_333" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_btn_brand"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="品牌"
+                android:textColor="@color/font_color_333" />
+
+            <View
+                android:id="@+id/line_brand"
+                android:layout_width="13dp"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/font_color_333" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_btn_product"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_white"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="产品"
+                android:textColor="@color/font_color_333" />
+
+            <View
+                android:id="@+id/line_product"
+                android:layout_width="13dp"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/font_color_333" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_center"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lv_shop_brand"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_white"
+            android:dividerHeight="0.5dp" />
+
+        <GridView
+            android:id="@+id/gv_shop_product"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_top"
+            android:layout_marginTop="5dp"
+            android:background="@color/color_white"
+            android:clickable="true"
+            android:horizontalSpacing="5dp"
+            android:numColumns="3"
+            android:padding="5dp"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" />
+
+        <ListView
+            android:id="@+id/lv_shop_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@color/color_white"
+            android:dividerHeight="0.5dp" />
+
+        <WebView
+            android:id="@+id/wv_shop_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

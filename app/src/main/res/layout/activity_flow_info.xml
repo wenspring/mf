@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    tools:context="meifeng.mobile.kevin.com.meifeng.mvp.main.myorder.view.producOrdertDetailView.FlowInfoActivity">
+
+    <meifeng.mobile.kevin.com.meifeng.ext.toolbar.ToolBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:function_enable="false"
+        app:title_name="物流信息" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="51dp"
+        android:background="@color/color_white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_order_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="订单编号: 1423423534643535141"
+            android:textColor="@color/font_color_333"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_flow_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="物流公司: 顺丰快递"
+            android:textColor="@color/font_color_333"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_flow_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="物流编号: 2018082424234234231"
+            android:textColor="@color/font_color_333"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="物流信息:"
+            android:textColor="@color/font_color_333"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_flow_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="4dp"
+            android:text="等待发货中"
+            android:textColor="@color/btn_bg_color"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

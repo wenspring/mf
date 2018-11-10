@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- tab color -->
+    <color name="colorTabTextNormal">#333</color>
+    <color name="colorTabTextSelect">#FFFFFF</color>
+    <color name="colorTabIndicator">#FFFFFF</color>
+
+    <!-- main color -->
+    <color name="app_main_nav_color">#28B8A1</color>
+    <color name="transparent">#00000000</color> <!-- 透明 -->
+    <color name="color_white">#ffffff</color>
+    <color name="color_main_bg">#F8F8F8</color>
+    <color name="color_black">#000000</color>
+
+    <!--font color -->
+    <color name="font_color_333">#333</color>
+    <color name="font_color_666">#666</color>
+    <color name="font_color_999">#999</color>
+    <color name="font_color_red">#D92A2B</color>
+
+    <color name="colorBlack">#000000</color>
+
+    <!-- bg color -->
+    <color name="btn_bg_color">#FF9800</color>
+
+    <!-- popwindow color -->
+    <color name="transparent_half">#b0000000</color>
+    <color name="line">#B8B8B8</color>
+    <color name="gray_bg">#E2E2E2</color>
+    <color name="gray_font">#909090</color>
+
+
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037bff</color>
+    <color name="actionsheet_red">#fd4a2e</color>
+    <color name="actionsheet_gray">#666666</color>
+    <color name="actionsheet_select">#ffe0e0e0</color>
+
+    <color name="colorYellowformainitem">#f4da8e</color>
+    <color name="colorBlueformainitem">#9fd1ec</color>
+    <color name="colorPerpleformainitem">#c0b7da</color>
+    <color name="colorGrayformainitem">#c1c9cf</color>
+    <color name="colorGreenformainitem">#bbe49b</color>
+    <color name="colorOrigraneformainitem">#f7c3ac</color>
+
+    <!-- color gray-->
+    <color name="gray">#F2F0F2</color>
+
+    <!-- 導航欄顏色 -->
+    <color name="colorNavBar">#26abf0</color>
+
+
+</resources>

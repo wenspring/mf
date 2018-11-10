@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/corner_bg">
+
+        <ImageView
+            android:id="@+id/iv_place_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            android:background="@color/transparent" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:text="三楼装修：刷墙上漆"
+            android:textColor="@color/font_color_333"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_work_price"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="36dp"
+            android:text="¥ 555.00"
+            android:textSize="14dp"
+            android:textStyle="italic"
+            android:textColor="@color/font_color_red"/>
+
+        <TextView
+            android:id="@+id/tv_create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:text="昨天 18:00"
+            android:textStyle="italic"
+            android:textSize="11dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:layout_marginTop="68dp">
+
+            <TextView
+                android:id="@+id/tv_choose_status"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_marginLeft="12dp"
+                android:gravity="center"
+                android:text="[已选装修材料] 装修描述信息显示"
+                android:textColor="@color/font_color_666"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="92dp"
+            android:alpha="0.4"
+            android:background="@color/font_color_999" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="93dp">
+
+            <TextView
+                android:id="@+id/tv_pay_status"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginLeft="12dp"
+                android:gravity="center"
+                android:text="浏览: 100"
+                android:textColor="@color/font_color_999"
+                android:textSize="11dp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/btn_op"
+                android:layout_width="73dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/font_color_red"
+                android:text="取消发布"
+                android:textColor="@color/color_white"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

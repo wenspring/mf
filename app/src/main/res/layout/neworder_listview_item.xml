@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/corner_bg">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/corner_bg_img" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:text="凯文啊"
+            android:textColor="@color/font_color_333"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_user_score"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="36dp"
+            android:text="综合评分"
+            android:textColor="@color/btn_bg_color"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/tv_date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:text="今天 18:00"
+            android:textSize="11dp"
+            android:textStyle="italic" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="68dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_marginLeft="12dp"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="@color/font_color_666"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/tv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="23dp"
+                android:gravity="center"
+                android:text="desc"
+                android:textColor="@color/font_color_666"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="64dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="23dp"
+                android:gravity="center"
+                android:text="广东-东莞"
+                android:textSize="11dp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="115dp"
+            android:alpha="0.4"
+            android:background="@color/font_color_999" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="116dp">
+
+            <TextView
+                android:id="@+id/tv_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginLeft="12dp"
+                android:gravity="center"
+                android:text="¥ 0.00"
+                android:textColor="@color/font_color_red"
+                android:textSize="15dp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/btn_robbing"
+                android:layout_width="73dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/btn_bg_color"
+                android:focusable="auto"
+                android:text="立即抢单"
+                android:textColor="@color/color_white"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

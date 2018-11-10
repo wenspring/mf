@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_back"
+                android:layout_width="50dp"
+                android:layout_height="46dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/icon_back_black"
+                    android:scaleType="centerInside" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="50dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLength="100"
+                android:text="手机验证"
+                android:textColor="@color/font_color_333"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="请输入您的手机号码"
+                android:textAlignment="textStart"
+                android:textColor="@color/font_color_333"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="请输入正在使用的手机号码，用于接收验证码"
+                android:textAlignment="textStart"
+                android:textColor="@color/font_color_666"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="请输入手机号码"
+                android:textAlignment="textStart"
+                android:textColor="@color/font_color_999"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/et_mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="9dp"
+                android:hint="手机号码"
+                android:maxLength="11"
+                android:inputType="number"
+                android:textColor="@color/font_color_333"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/et_check_number"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="9dp"
+                android:hint="验证码"
+                android:textColor="@color/font_color_333"
+                android:inputType="number"
+                android:maxLength="4"
+                android:visibility="gone"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_reg_next"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/color_white"
+            android:text="获取验证码"
+            android:textSize="14dp"
+            android:background="@color/app_main_nav_color"/>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

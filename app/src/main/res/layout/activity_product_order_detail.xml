@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    tools:context="meifeng.mobile.kevin.com.meifeng.mvp.main.myorder.view.producOrdertDetailView.ProductOrderDetailActivity">
+
+
+    <meifeng.mobile.kevin.com.meifeng.ext.toolbar.ToolBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:function_enable="false"
+        app:title_name="订单详情" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="51dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_order_receive_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:lineSpacingExtra="7dp"
+            android:textColor="@color/color_black"
+            android:textSize="13dp" />
+
+        <ListView
+            android:id="@+id/lv_my_order_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_top"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:background="@color/color_white" />
+
+        <LinearLayout
+            android:id="@+id/ll_flow"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/ll_product_desc"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/color_white"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btm_sure_receipt"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@color/btn_bg_color"
+                android:text="确认收货"
+                android:textColor="@color/color_white"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/btn_look_flow_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:gravity="right|center_vertical"
+                android:paddingRight="10dp"
+                android:text="查看物流 >"
+                android:textColor="#f66020"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pay_content"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="订单金额：¥"
+                android:textColor="@color/color_black"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_pay_total"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="0.00"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_cancel_order"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_red_dark"
+                android:text="取消订单"
+                android:textColor="@color/color_white"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/btn_pay_now"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_orange_dark"
+                android:text="立即付款"
+                android:textColor="@color/color_white"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_full_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.4"
+        android:visibility="gone"
+        android:background="@color/color_black"/>
+
+</RelativeLayout>

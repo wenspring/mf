@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    tools:context=".mvp.main.sendNewOrder.view.SendNewOrderActivity">
+
+    <meifeng.mobile.kevin.com.meifeng.ext.toolbar.ToolBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:function_enable="false"
+        app:title_name="发布项目" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="46dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <!-- title -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical"
+                    android:text="标题"
+                    android:textColor="@color/font_color_999"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/et_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg_style"
+                    android:hint="填写标题"
+                    android:minHeight="40dp"
+                    android:minLines="1"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/font_color_666"
+                    android:textColorHint="@color/font_color_999"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <!-- 描述 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical"
+                    android:text="项目描述"
+                    android:textColor="@color/font_color_999"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/et_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg_style"
+                    android:gravity="top"
+                    android:hint="填写项目描述"
+                    android:inputType="textMultiLine"
+                    android:minHeight="40dp"
+                    android:minLines="4"
+                    android:padding="3dp"
+                    android:textColor="@color/font_color_666"
+                    android:textColorHint="@color/font_color_999"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <!-- 佣金 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical"
+                    android:text="项目佣金"
+                    android:textColor="@color/font_color_999"
+                    android:textSize="12dp" />
+
+                <EditText
+                    android:id="@+id/et_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg_style"
+                    android:digits="0123456789."
+                    android:hint="填写项目佣金"
+                    android:inputType="numberDecimal"
+                    android:lines="1"
+                    android:maxLength="12"
+                    android:minHeight="40dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/font_color_666"
+                    android:textColorHint="@color/font_color_999"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical"
+                    android:text="额外感谢费"
+                    android:textColor="@color/font_color_999"
+                    android:textSize="12dp" />
+
+                <Switch
+                    android:id="@+id/switch_is_other_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textOff="close"
+                    android:textOn="open" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_other_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/et_other_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg_style"
+                    android:digits="0123456789."
+                    android:hint="填写感谢费"
+                    android:inputType="numberDecimal"
+                    android:lines="1"
+                    android:maxLength="10"
+                    android:minHeight="40dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/font_color_666"
+                    android:textColorHint="@color/font_color_999"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical"
+                    android:text="项目场景拍照"
+                    android:textColor="@color/font_color_999"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:id="@+id/iv_take_photo_place"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/icon_add_photo"
+                    android:visibility="gone" />
+
+                <GridView
+                    android:id="@+id/gv_place"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_white"
+                    android:clickable="true"
+                    android:gravity="left"
+                    android:horizontalSpacing="2dp"
+                    android:numColumns="4"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth" />
+
+            </LinearLayout>
+
+            <!-- 佣金 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical"
+                    android:text="装修地点"
+                    android:textColor="@color/font_color_999"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/tv_work_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg_style"
+                    android:gravity="center_vertical"
+                    android:hint="施工省份城市"
+                    android:minHeight="40dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/font_color_666"
+                    android:textColorHint="@color/font_color_999"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/et_work_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/edit_bg_style"
+                    android:hint="施工街道地址"
+                    android:minHeight="40dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/font_color_666"
+                    android:textColorHint="@color/font_color_999"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical"
+                    android:text="是否选择已购买的材料"
+                    android:textColor="@color/font_color_999"
+                    android:textSize="12dp" />
+
+                <Switch
+                    android:id="@+id/switch_is_choose_materiel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textOff="close"
+                    android:textOn="open" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_choose_product"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@mipmap/icon_add_photo" />
+
+                <ListView
+                    android:id="@+id/lv_choose_materil"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/color_white"
+                    android:dividerHeight="0.5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical"
+                    android:text="要求项目完成日期"
+                    android:textColor="@color/font_color_999"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/et_end_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg_style"
+                    android:gravity="left|center_vertical"
+                    android:hint="请选择日期"
+                    android:inputType="numberDecimal"
+                    android:lines="1"
+                    android:minHeight="40dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/font_color_666"
+                    android:textColorHint="@color/font_color_999"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_full_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.4"
+        android:background="@color/color_black"
+        android:visibility="gone">
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

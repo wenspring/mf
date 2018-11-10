@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">美缝大师</string>
+
+    <array name="tab_titles">
+        <item>最新订单</item>
+        <item>委派订单</item>
+    </array>
+
+    <array name="tab_collection_titles">
+        <item>商品</item>
+        <item>商铺</item>
+    </array>
+
+    <string name="sting_file_provider">com.kevin.mobile.meifeng.fileprovider</string>
+
+    <string name="system_message_ing_loading">请稍后...</string>
+    <string name="system_cancel">Cancel</string>
+    <string name="system_confirm">Confirm</string>
+    <string name="system_message_tips">提示</string>
+    <string name="system_message_action_exit">确认要退出？</string>
+
+    <!--imagePager -->
+    <string name="img_vpager_indicator">%1$d/%2$d</string>
+</resources>

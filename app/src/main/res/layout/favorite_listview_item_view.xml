@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_collect_img"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:background="@color/transparent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:text="etwg25dp25dpetwg25dp25dpetwg25dp25dpetwg25dp25dpetwg25dp25dpetwg2etwg25dp25dpetwg25dp25dp5dp25dpetwg25dp25dp"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="¥ 155.00"
+                    android:textColor="@color/actionsheet_red"
+                    android:textSize="13dp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tv_datetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:background="@drawable/alert_trans_bg"
+                    android:gravity="center"
+                    android:text="2019-09-22 22:00"
+                    android:textAlignment="center"
+                    android:textStyle="italic"
+                    android:textColor="@color/font_color_999"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_del"
+        android:layout_width="90dp"
+        android:layout_height="78dp"
+        android:layout_alignParentRight="true"
+        android:background="#e97667"
+        android:text="删除"
+        android:textColor="@color/color_white"
+        android:visibility="gone" />
+
+</RelativeLayout>
